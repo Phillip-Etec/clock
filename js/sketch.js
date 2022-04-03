@@ -105,8 +105,8 @@ function drawSeconds() {
 	let seconds = frameCount / 60 + starting[0];
 
 	if(frameCount % framerating == 0) {
-		pxS = branchlessCosOfPi(seconds-14.4, 60);
-		pyS = branchlessSinOvPi(seconds-14.4, 60);
+		pxS = branchlessCosOfPi(seconds-15, 60);
+		pyS = branchlessSinOvPi(seconds-15, 60);
 		pxS = Math.cos(pxS);
 		pyS = Math.sin(pyS);
 		pxS *= radiusCircle*30/100;
@@ -115,8 +115,8 @@ function drawSeconds() {
 	}
 
 	else if(first[0]) {
-		pxS = branchlessCosOfPi(seconds-14.4, 60);
-		pyS = branchlessSinOvPi(seconds-14.4, 60);
+		pxS = branchlessCosOfPi(seconds-15, 60);
+		pyS = branchlessSinOvPi(seconds-15, 60);
 		pxS = Math.cos(pxS);
 		pyS = Math.sin(pyS);
 		pxS *= radiusCircle*30/100;
