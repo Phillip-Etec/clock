@@ -16,6 +16,7 @@ function branchlessSinOvPi(a, b) {
   return (((2*PI)/b) * a)*1*(a!=0);
 }
 function branchlessCosOfPi(a, b) {
+  if(a == 0) return 0;
   return Math.pow((((2*PI)/b) * a), 0+1*(a!=0));
 }
 function sinOvPi(a, b) {
